@@ -1,0 +1,17 @@
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/bin/Debug/netcoreapp2.2/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/bin/Debug/netcoreapp2.2/xunit.runner.reporters.netcoreapp10.dll
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/bin/Debug/netcoreapp2.2/xunit.runner.utility.netcoreapp10.dll
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/bin/Debug/netcoreapp2.2/UnusualSpending.Tests.deps.json
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/bin/Debug/netcoreapp2.2/UnusualSpending.Tests.runtimeconfig.json
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/bin/Debug/netcoreapp2.2/UnusualSpending.Tests.runtimeconfig.dev.json
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/bin/Debug/netcoreapp2.2/UnusualSpending.Tests.dll
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/bin/Debug/netcoreapp2.2/UnusualSpending.Tests.pdb
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/obj/Debug/netcoreapp2.2/UnusualSpending.Tests.csprojAssemblyReference.cache
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/obj/Debug/netcoreapp2.2/UnusualSpending.Tests.csproj.CoreCompileInputs.cache
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/obj/Debug/netcoreapp2.2/UnusualSpending.Tests.AssemblyInfoInputs.cache
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/obj/Debug/netcoreapp2.2/UnusualSpending.Tests.AssemblyInfo.cs
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/obj/Debug/netcoreapp2.2/UnusualSpending.Tests.dll
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/obj/Debug/netcoreapp2.2/UnusualSpending.Tests.pdb
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/bin/Debug/netcoreapp2.2/UnusualSpending.dll
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/bin/Debug/netcoreapp2.2/UnusualSpending.pdb
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending.Tests/obj/Debug/netcoreapp2.2/UnusualSpending.Tests.csproj.CopyComplete

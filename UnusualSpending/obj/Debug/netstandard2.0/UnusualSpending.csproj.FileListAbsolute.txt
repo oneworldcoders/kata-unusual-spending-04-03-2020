@@ -1,0 +1,9 @@
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending/bin/Debug/netstandard2.0/UnusualSpending.deps.json
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending/bin/Debug/netstandard2.0/UnusualSpending.dll
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending/bin/Debug/netstandard2.0/UnusualSpending.pdb
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending/obj/Debug/netstandard2.0/UnusualSpending.csprojAssemblyReference.cache
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending/obj/Debug/netstandard2.0/UnusualSpending.csproj.CoreCompileInputs.cache
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending/obj/Debug/netstandard2.0/UnusualSpending.AssemblyInfoInputs.cache
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending/obj/Debug/netstandard2.0/UnusualSpending.AssemblyInfo.cs
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending/obj/Debug/netstandard2.0/UnusualSpending.dll
+/Users/rrugamba/Documents/Projects/Katas/UnusualSpending/UnusualSpending/obj/Debug/netstandard2.0/UnusualSpending.pdb
