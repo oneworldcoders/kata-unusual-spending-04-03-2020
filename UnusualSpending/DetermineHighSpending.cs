@@ -6,26 +6,25 @@ namespace UnusualSpending
 {
     public class DetermineHighSpending : IDetermineHighSpending
     {
-        public List<HighSpendingStatus> _HighSpendingStatuses { get; } = new List<HighSpendingStatus>();
+        private List<HighSpendingStatus> _highSpendingStatuses { get; } = new List<HighSpendingStatus>();
+        private List<Payment> _payments { get; set; } = new List<Payment>();
+        private int _currentMonth { get; } = DateTime.Now.ToLocalTime().Month;
+        private int _previousMonth { get; set; }
+
         public DetermineHighSpending() {
-            
+            _previousMonth = SetPreviousMonth();
         }
+
         public List<HighSpendingStatus> Compute(List<Payment> payments) 
         {
+            _payments = payments;
+        
             if (!payments.Any() || payments.Count == 1) {
-                return _HighSpendingStatuses;
+                return _highSpendingStatuses;
             }
-
-            var currentMonth = DateTime.Now.Month;
-            var previousMonth = currentMonth == 1 ? 12 : currentMonth - 1;
-
-            var foodTotalsInCurrentMonth = payments
-                .Where(p => p.TransactionDate.Month.Equals(currentMonth) && p.Category.Equals(Category.Food))
-                .Sum(p => p.Amount);
             
-            var foodTotalsInPreviousMonth =  payments
-                .Where(p => p.TransactionDate.Month.Equals(previousMonth) && p.Category.Equals(Category.Food))
-                .Sum(p => p.Amount);
+            var foodTotalsInCurrentMonth = ComputeMonthTotalsFor(Category.Food, _currentMonth);
+            var foodTotalsInPreviousMonth = ComputeMonthTotalsFor(Category.Food, _previousMonth);
 
             var difference = foodTotalsInCurrentMonth - foodTotalsInPreviousMonth;
 
@@ -36,14 +35,29 @@ namespace UnusualSpending
             }
 
             if (percentageDifference > 1.5m) {
-                _HighSpendingStatuses.Add(new HighSpendingStatus{
+                _highSpendingStatuses.Add(new HighSpendingStatus{
                     Category = Category.Food,
                     Total = difference
                 });
             }
 
-            return _HighSpendingStatuses;
-
+            return _highSpendingStatuses;
         }
+
+        private int SetPreviousMonth() 
+        {
+            return _currentMonth == (int) Month.Dec
+                ? (int) Month.Jan
+                : _currentMonth - 1;
+        }
+
+        private decimal ComputeMonthTotalsFor(Category category, int month) 
+        {
+           return _payments
+                .Where(p => p.TransactionDate.Month.Equals(month) && p.Category.Equals(category))
+                .Sum(p => p.Amount); 
+        }
+        
+        
     }
 }
