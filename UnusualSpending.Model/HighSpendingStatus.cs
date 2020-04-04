@@ -1,4 +1,4 @@
-namespace UnusualSpending
+namespace UnusualSpending.Model
 {
     public class HighSpendingStatus
     {

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnusualSpending.Tests", "Un
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnusualSpending", "UnusualSpending\UnusualSpending.csproj", "{5E952311-A03D-4449-A4D0-5EBDFD338A87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnusualSpending.Model", "UnusualSpending.Model\UnusualSpending.Model.csproj", "{5F506EDE-7288-4997-88DF-6EEDF935602C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{5E952311-A03D-4449-A4D0-5EBDFD338A87}.Release|x64.Build.0 = Release|Any CPU
 		{5E952311-A03D-4449-A4D0-5EBDFD338A87}.Release|x86.ActiveCfg = Release|Any CPU
 		{5E952311-A03D-4449-A4D0-5EBDFD338A87}.Release|x86.Build.0 = Release|Any CPU
+		{5F506EDE-7288-4997-88DF-6EEDF935602C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F506EDE-7288-4997-88DF-6EEDF935602C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F506EDE-7288-4997-88DF-6EEDF935602C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5F506EDE-7288-4997-88DF-6EEDF935602C}.Debug|x64.Build.0 = Debug|Any CPU
+		{5F506EDE-7288-4997-88DF-6EEDF935602C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5F506EDE-7288-4997-88DF-6EEDF935602C}.Debug|x86.Build.0 = Debug|Any CPU
+		{5F506EDE-7288-4997-88DF-6EEDF935602C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F506EDE-7288-4997-88DF-6EEDF935602C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F506EDE-7288-4997-88DF-6EEDF935602C}.Release|x64.ActiveCfg = Release|Any CPU
+		{5F506EDE-7288-4997-88DF-6EEDF935602C}.Release|x64.Build.0 = Release|Any CPU
+		{5F506EDE-7288-4997-88DF-6EEDF935602C}.Release|x86.ActiveCfg = Release|Any CPU
+		{5F506EDE-7288-4997-88DF-6EEDF935602C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

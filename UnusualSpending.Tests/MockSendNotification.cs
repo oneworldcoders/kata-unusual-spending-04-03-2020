@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Moq;
+using UnusualSpending.Model;
 
 namespace UnusualSpending.Tests
 {

@@ -1,6 +1,6 @@
 using System;
 
-namespace UnusualSpending
+namespace UnusualSpending.Model
 {
     public class Payment
     {

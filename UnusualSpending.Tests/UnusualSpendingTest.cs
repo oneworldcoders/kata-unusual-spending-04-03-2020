@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnusualSpending.Model;
 using Xunit;
 
 namespace UnusualSpending.Tests
