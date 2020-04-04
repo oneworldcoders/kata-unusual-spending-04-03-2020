@@ -4,7 +4,7 @@ using System.Linq;
 using UnusualSpending.Model;
 using Xunit;
 
-namespace UnusualSpending.Tests
+namespace UnusualSpending.Tests.Unit
 {
     public class DetermineHighSpendingTest
     {

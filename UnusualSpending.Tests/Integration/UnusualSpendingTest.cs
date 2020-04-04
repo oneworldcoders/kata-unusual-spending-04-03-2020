@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
 using UnusualSpending.Model;
+using UnusualSpending.Tests.Mocks;
 using Xunit;
 
-namespace UnusualSpending.Tests
+namespace UnusualSpending.Tests.Integration
 {
     public class UnusualSpendingTest
     {

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Moq;
 using UnusualSpending.Model;
 
-namespace UnusualSpending.Tests
+namespace UnusualSpending.Tests.Mocks
 {
     public class MockDetermineHighSpending : IDetermineHighSpending
     {
