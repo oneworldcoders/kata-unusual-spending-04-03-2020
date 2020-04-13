@@ -67,5 +67,66 @@ namespace UnusualSpending.Tests.Unit
             Assert.Equal(expectedHighSpendingStatus.Category, highSpendingStatuses.ElementAt(0).Category);
             Assert.Equal(expectedHighSpendingStatus.Total, highSpendingStatuses.ElementAt(0).Total);
         }
+        
+        [Fact]
+        public void given_four_payments_with_two_different_categories_for_an_id_then_trigger_high_spending_for_both_categories() 
+        {
+            var payments = new List<Payment>
+            {
+                new Payment
+                {
+                    Id = 1,
+                    TransactionDate = new DateTime(2020, 04, 03),
+                    Category = Category.Food,
+                    Amount = 200.00m,
+                },
+                new Payment
+                {
+                    Id = 1,
+                    TransactionDate = new DateTime(2020, 04, 03),
+                    Category = Category.Transport,
+                    Amount = 50.00m,
+                },
+                new Payment
+                {
+                    Id = 1,
+                    TransactionDate = new DateTime(2020, 03, 03),
+                    Category = Category.Food,
+                    Amount = 50.00m,
+                },
+               
+                new Payment
+                {
+                    Id = 1,
+                    TransactionDate = new DateTime(2020, 03, 03),
+                    Category = Category.Transport,
+                    Amount = 5.00m,
+                }
+            };
+
+            var determineHighSpending = new DetermineHighSpending();
+            var highSpendingStatuses = determineHighSpending.Compute(payments);
+
+            var expectedHighSpendingStatus = new List<HighSpendingStatus>
+            {
+                new HighSpendingStatus
+                {
+                    Category = Category.Food,
+                    Total = 150.00m
+                },
+                new HighSpendingStatus
+                {
+                    Category = Category.Transport,
+                    Total = 45.00m
+                }
+            };
+                
+
+            Assert.Equal(2, highSpendingStatuses.Count);
+            Assert.Equal(expectedHighSpendingStatus[0].Category, highSpendingStatuses.ElementAt(0).Category);
+            Assert.Equal(expectedHighSpendingStatus[0].Total, highSpendingStatuses.ElementAt(0).Total);
+            Assert.Equal(expectedHighSpendingStatus[1].Category, highSpendingStatuses.ElementAt(1).Category);
+            Assert.Equal(expectedHighSpendingStatus[1].Total, highSpendingStatuses.ElementAt(1).Total);
+        }
     }
 }

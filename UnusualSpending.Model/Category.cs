@@ -2,6 +2,7 @@ namespace UnusualSpending.Model
 {
     public enum Category
     {
-        Food
+        Food,
+        Transport
     }
 }
