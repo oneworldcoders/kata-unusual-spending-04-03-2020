@@ -9,15 +9,19 @@ namespace UnusualSpending
     {
         private List<HighSpendingStatus> _highSpendingStatuses { get; } = new List<HighSpendingStatus>();
         private List<Payment> _payments { get; set; } = new List<Payment>();
-        private int _currentMonth { get; } = DateTime.Now.ToLocalTime().Month;
-        private int _previousMonth => _currentMonth == (int) Month.Dec ? (int) Month.Jan : _currentMonth - 1; 
+        private int _currentMonth { get; set; }
+        private int _previousMonth { get; set; }
+        private IDateTimeProvider _dateTimeProvider { get; set; }
 
-        public DetermineHighSpending() {
+        public DetermineHighSpending(IDateTimeProvider datimeProvider) {
+            _dateTimeProvider = datimeProvider;
         }
 
         public List<HighSpendingStatus> Compute(List<Payment> payments) 
         {
             _payments = payments;
+            _currentMonth = _dateTimeProvider.getDateTime().Month;
+            _previousMonth = _currentMonth == (int)Month.Dec ? (int)Month.Jan : _currentMonth - 1;
 
             if (!payments.Any() || payments.Count == 1) 
             {

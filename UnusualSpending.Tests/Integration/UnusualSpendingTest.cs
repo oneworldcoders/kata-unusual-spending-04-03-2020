@@ -46,12 +46,16 @@ namespace UnusualSpending.Tests.Integration
         [Fact]
         public void given_two_payments_that_trigger_high_spending_verify_correct_message_set() 
         {
+            var mockDateTimeProvider = new MockIDateTimeProvider();
+            var mockCurrentDate = mockDateTimeProvider.ToReturn(new DateTime(2020, 04, 03));
+            var currentDate = mockDateTimeProvider.getDateTime();
+
             var payments = new List<Payment>
             {
                 new Payment
                 {
                     Id = 1,
-                    TransactionDate = new DateTime(2020, 04, 03),
+                    TransactionDate = currentDate,
                     Category = Category.Food,
                     Amount = 200.00m,
                 },
@@ -67,7 +71,7 @@ namespace UnusualSpending.Tests.Integration
             
             var mockPaymentRepository = new MockPaymentRepository().WithThese(payments);
             var sendNotification = new SendNotification();
-            var spending = new Spending(mockPaymentRepository, new DetermineHighSpending(), sendNotification);
+            var spending = new Spending(mockPaymentRepository, new DetermineHighSpending(mockCurrentDate), sendNotification);
             
             spending.Trigger(1);
 
